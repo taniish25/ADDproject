@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <link rel="stylesheet" href="asserts/css/product.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script defer src="asserts/js/product.js"></script> <!-- Include the JavaScript file -->
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="logo">
+                <img src="Product images/logo3.png" alt="Your Logo" class="logo-image">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="home.html"><i class="fas fa-home"></i> Home</a></li>
+                    <li class="dropdown">
+                        <a href="products.html" class="dropbtn"><i class="fas fa-store"></i> Shop</a>
+                        <div class="dropdown-content">
+                            <a href="products.html#clothing"><i class="fa-solid fa-shirt"></i> Clothing</a>
+                            <a href="products.html#phones"><i class="fa-solid fa-laptop"></i> Mobiles & Laptops</a>
+                            <a href="products.html#home appliances"><i class="fa-solid fa-mug-saucer"></i> Home Appliances</a>
+                            <a href="products.html#accessories"><i class="fa-solid fa-gamepad"></i> Accessories</a>
+                        </div>
+                    </li>
+                    <li><a href="#unavailable" title="Currently unavailable"><i class="fa-solid fa-globe"></i>Language</a></li>
+                </ul>
+            </nav>
+            <div class="search-bar">
+                <form action="products.html" method="get">
+                    <input type="text" placeholder="Search.." name="search">
+                    <button type="submit"><i class="fas fa-search"></i></button>
+                </form>
+            </div>
+            <div class="user-actions">
+                <a href="get"><i class="fas fa-user"></i> Login</a>
+                <a href="cart.html"><i class="fas fa-shopping-cart"></i> Cart (<span id="cart-count">)</span>)</a> <!-- Cart count -->
+                <div class="dropdown">
+                    <a href="#" class="dropdown-toggle"><i class="fa-solid fa-list"></i> More</a>
+                    <div class="dropdown-content">
+                        <li><a href="home.html"><i class="fas fa-envelope"></i> Contact Us</a></li>
+                        <a href="home.html"><i class="fas fa-info-circle"></i> About</a>
+                        <a href="home.html"><i class="fa-solid fa-film"></i> Blog</a>
+                        <a href="portfolio.html"><i class="fas fa-briefcase"></i> Our Portfolio</a>
+                        
+                    </div>
+                </div>
+            </div>
+        </header>
+    </div>
+
+            <!-- Product Category Section -->
+            <section id="clothing" class="product-category">
+                <h2 class="category-name">Clothing</h2>
+                <div class="carousel">
+                <div class="carousel-inner">
+                <div class="product-grid">
+                
+                    <!-- Product 1 -->
+                    <a href="product-details.html#1">
+                    <div class="product-details" data-product-id="1" data-product-name="Van Heusen Men's Regular Fit Shirt" data-product-price="5999">
+                        <img src="Product images/Clothing/shirt1.jpg" alt="Product Image" class="product-image">
+                        <div class="product-info">
+                            <link rel="effect" href="effect.html">
+                            <h1 class="product-name">Van Heusen Men's Regular Fit Shirt</h1>
+                            <p class="product-price">₹5,999</p>
+                            <p class="product-description">100% Cotton Regular Fit Long Sleeve Spread Collar Standard Length Neck style Dom Country of Origin India</p>
+                            <div class="product-reviews">
+                              <h3></h3>
+                            </a>
+                            </div>
+
+
+                            <button class="add-to-cart"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+                        </div>
+                    </div>
+                
+                    <!-- Product 2 -->
+                     <a href="product-details.html#2">
+                    <div class="product-details" data-product-id="2" data-product-name="Allen Solly Men's Slim Fit Shirt" data-product-price="909">
+                        <img src="Product images/Clothing/Shirt2.jpg" alt="Product Image" class="product-image">
+                        <div class="product-info">
+                            <h1 class="product-name">Allen Solly Men's Slim Fit Shirt</h1>
+                            <p class="product-price">₹909</p>
+                            <p class="product-description">Occasion: Casual, Fit: Slim Fit, Material: 100% Cotton</p>
+                        </a>
+                            <button class="add-to-cart"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+                        </div>
+                    </div>
+                    <!-- Add more products here as per your structure -->
+                <!-- Product 3 -->
+                 <a href="product-details.html#3">
+                <div class="product-details" data-product-id="3" data-product-name="U.S. POLO ASSN. Men's Solid Regular Fit T-Shirt" data-product-price="1209">
+                    <img src="Product images/Clothing/tshirt.jpg" alt="Product Image" class="product-image">
+                    <div class="product-info">
+                        <h1 class="product-name">U.S. POLO ASSN. Men's Solid Regular Fit T-Shirt</h1>
+                        <p class="product-price">₹1,209</p>
+                        <p class="product-description">Material composition 100% Cotton Regular Fit
+                            Half Sleeve
+                            Polo Collar
+                            Standard Length
+                            Collared Neck
+                            Country of Origin India</p>
+                        </a>        
+                        <button class="add-to-cart"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+                    </div>
+                </div>
+                <!-- Product 4 -->
+                 <a href="product-details.html#4">
+                <div class="product-details" data-product-id="4" data-product-name="Levi's Men's Spread Collar Slim Fit Solid Shirts" data-product-price="1499">
+                    <img src="Product images/Clothing/shirt3.jpg" alt="Product Image" class="product-image">
+                    <div class="product-info">
+                        <h1 class="product-name">Levi's Men's Spread Collar Slim Fit Solid Shirts</h1>
+                        <p class="product-price">₹1,499</p>
+                        <p class="product-description">Material composition 100% COTTON 50X50/144X76 PLAIN
+                            Pattern Solid
+                            Slim Fit
+                            Long Sleeve
+                            Spread Collar
+                            Standard Length
+                            Country of Origin India</p>
+                        </a>    
+                        <button class="add-to-cart"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+                    </div>
+                </div>
+                <!-- Product 5 -->
+                 <a href="product-details.html#5">
+                <div class="product-details" data-product-id="5" data-product-name="Levi's Men's Relaxed Fit T-Shirt" data-product-price="926">
+                    <img src="Product images/Clothing/tshirt2.jpg" alt="Product Image" class="product-image">
+                    <div class="product-info">
+                        <h1 class="product-name">Levi's Men's Relaxed Fit T-Shirt</h1>
+                        <p class="product-price">₹926</p>
+                        <p class="product-description">Material composition 100% Cotton Relaxed Fit Half Sleeve Polo Collar Standard Length Collared Neck Country of Origin India</p>
+                    </a>
+                        <button class="add-to-cart"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+                    </div>
+                </div>
+                <!-- Product 6 -->
+                 <a href="product-details.html#6">
+                <div class="product-details" data-product-id="6" data-product-name="Allen Solly Men's Blazer" data-product-price="5249">
+                    <img src="Product images/Clothing/blazer.jpg" alt="Product Image" class="product-image">
+                    <div class="product-info">
+                        <h1 class="product-name">Allen Solly Men's Blazer</h1>
+                        <p class="product-price">₹5,249</p>
+                        <p class="product-description">Material composition 63% Polyester, 35% Viscose, 2% Spandex Blazer
+                            Closure type Button
+                            Pattern Solid
+                            Country of Origin India</p>
+                        </a>    
+                        <button class="add-to-cart"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+                    </div>
+                </div>
+                <!-- Product 7 -->
+                 <a href="product-details.html#7">
+                <div class="product-details" data-product-id="7" data-product-name="BIBA Women's Cotton Solid Regular Kurta" data-product-price="734">
+                    <img src="Product images/Clothing/Kurta1.jpg" alt="Product Image" class="product-image">
+                    <div class="product-info">
+                        <h1 class="product-name">BIBA Women's Cotton Solid Regular Kurta</h1>
+                        <p class="product-price">₹734</p>
+                        <p class="product-description">Material composition 100% Cotton 3/4 Sleeve Calf length Dom Solid A-Line
+                            Country of Origin India</p>
+                        </a>    
+                        <button class="add-to-cart"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+                    </div>
+                </div>
+                <!-- Product 8 -->
+                <a href="product-details.html#8">
+                <div class="product-details" data-product-id="8" data-product-name="Allen Solly Women's Regular Fit Shirt" data-product-price="2999">
+                    <img src="Product images/Clothing/womenshirt1.jpg" alt="Product Image" class="product-image">
+                    <div class="product-info">
+                        <h1 class="product-name">Allen Solly Women's Regular Fit Shirt</h1>
+                        <p class="product-price">₹2,999</p>
+                        <p class="product-description">Material composition 100% Polyester Regular Fit Long Sleeve Spread Collar Modern Machine Wash
+                            Country of Origin India</p>
+                        </a>    
+                        <button class="add-to-cart"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+                    </div>
+                </div>
+                <!-- Product 9 -->
+                <a href="product-details.html#9">
+                <div class="product-details" data-product-id="9" data-product-name="BIBA Women Cotton Printed Fitted Salwar Kurta Dupatta" data-product-price="2877">
+                    <img src="Product images/Clothing/kurta2.jpg" alt="Product Image" class="product-image">
+                    <div class="product-info">
+                        <h1 class="product-name">BIBA Women Cotton Printed Fitted Salwar Kurta Dupatta</h1>
+                        <p class="product-price">₹2,877</p>
+                        <p class="product-description">Material composition 100% Cotton Calf Length Long sleeve Round Neck
+                            Style Regular
+                            Country of Origin India</p>
+                        </a>    
+                        <button class="add-to-cart"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+                    </div>
+                </div>
+                <!-- Product 10 -->
+                <a href="product-details.html#10">
+                <div class="product-details" data-product-id="10" data-product-name="BIBA Women Art Silk Flared Yarndyed Kurta" data-product-price="2000">
+                    <img src="Product images/Clothing/kurta3.jpg" alt="Product Image" class="product-image">
+                    <div class="product-info">
+                        <h1 class="product-name">BIBA Women Art Silk Flared Yarndyed Kurta</h1>
+                        <p class="product-price">₹2,000</p>
+                        <p class="product-description">Material composition 100% POLYESTER N/A 100 % COTTON 3/4 Sleeve Standard Length Mandarin Neck Solid Classic
+                            Country of Origin India</p>
+                        </a>    
+                        <button class="add-to-cart"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+                    </div>
+                </div>
+                <!-- Product 11 -->
+                <a href="product-details.html#11">
+                <div class="product-details" data-product-id="11" data-product-name="Allen Solly Women's Solid Regular Fit Formal Top" data-product-price="2599">
+                    <img src="Product images/Clothing/womenshirt2.jpg" alt="Product Image" class="product-image">
+                    <div class="product-info">
+                        <h1 class="product-name">Allen Solly Women's Solid Regular Fit Formal Top</h1>
+                        <p class="product-price">₹2,599</p>
+                        <p class="product-description">Material composition 95% Polyester, 5% Spandex Regular Fit Long Sleeve Crew Neck
+                            Style Modern Machine Wash
+                            Country of Origin India</p>
+                        </a>    
+                        <button class="add-to-cart"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+                    </div>
+                </div>
+                <!-- Product 12 -->
+                 <a href="product-details.html#12">
+                <div class="product-details" data-product-id="12" data-product-name="Allen Solly Women's Regular Fit Shirt" data-product-price="2599">  
+                    <p class="product-descript">
+                    <img src="Product images/Clothing/womenshirt3.jpg" alt="Product Image" class="product-image">
+                    <div class="product-info">
+                        <h1 class="product-name">Allen Solly Women's Regular Fit Shirt</h1>
+                        <p class="product-price">₹2,599</p>
+                        <p class="product-description">Material composition 100% Polyester Regular Fit Long Sleeve
+                            Style Modern Machine Wash
+                            Country of Origin India</p>
+                        </a>    
+                        <button class="add-to-cart"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+                    </div>
+                </div>
+                <!-- Repeat for other products, ensuring each has data attributes for ID, name, and price -->
+            </div>
+        </section>
+
+        <section id="phones" class="product-category">
+            <h2 class="category-name">Mobiles Phones and Laptops</h2>
+            <div class="product-grid">
+                <!-- Product 1 -->
+                <a href="product-details.html#13">
+                <div class="product-details" data-product-id="1" data-product-name="iPhone 16 Pro Max" data-product-price="184900">
+                    <img src="Product images/mobiles/16promax.jpg" alt="Product Image" class="product-image">
+                    <div class="product-info">
+                        <h1 class="product-name">iPhone 16 Pro Max</h1>
+                        <p class="product-price">₹1,84,900</p>
+                        <p class="product-description">1 TB: 5G Mobile Phone with Camera Control, 4K 120 fps Dolby Vision and a Huge Leap in Battery Life. Works with AirPods; Natural Titanium</p>
+                    </a>
+                        <button class="add-to-cart"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+                    </div>
+                </div>
+                <!-- Product 2 -->
+                <a href="product-details.html#14">
+                <div class="product-details" data-product-id="2" data-product-name="iPhone 16" data-product-price="106900">
+                    <img src="Product images/mobiles/iphone 16.jpg" alt="Product Image" class="product-image">
+                    <div class="product-info">
+                        <h1 class="product-name">iPhone 16</h1>
+                        <p class="product-price">₹1,06,900</p>
+                        <p class="product-description">512 GB: 5G Mobile Phone with Camera Control, A18 Chip and a Big Boost in Battery Life. Works with AirPods; White</p>
+                    </a>
+                        <button class="add-to-cart"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+                    </div>
+                </div>
+                <!-- Product 3 -->
+                <a href="product-details.html#15">
+                <div class="product-details" data-product-id="3" data-product-name="Oneplus Nord CE4" data-product-price="22990">
+                    <img src="Product images/mobiles/OnePlus CE-4.webp" alt="Product Image" class="product-image">
+                    <div class="product-info">
+                        <h1 class="product-name">Oneplus Nord CE4</h1>
+                        <p class="product-price">₹22,990</p>
+                        <p class="product-description">Celadon Marble, 8GB RAM, 128Gb Storage</p>
+                    </a>
+                        <button class="add-to-cart"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+                    </div>
+                </div>
+                <!-- Product 4 -->
+                <a href="product-details.html#16">
+                <div class="product-details" data-product-id="4" data-product-name="Oneplus Nord CE 3 5G" data-product-price="17990">
+                    <img src="Product images/mobiles/OnePlus CE-3.webp" alt="Product Image" class="product-image">
+                    <div class="product-info">
+                        <h1 class="product-name">Oneplus Nord CE 3 5G</h1>
+                        <p class="product-price">₹17,990</p>
+                        <p class="product-description">Grey Shimmer, 8GB RAM, 128GB Storage</p>
+                    </a>
+                        <button class="add-to-cart"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+                    </div>
+                </div>
+                <!-- Product 5 -->
+                <a href="product-details.html#17">
+                <div class="product-details" data-product-id="5" data-product-name="Samsung Galaxy S24 Ultra 5G AI Smartphone" data-product-price="121999">
+                    <img src="Product images/mobiles/S24 Ultra.webp" alt="Product Image" class="product-image">
+                    <div class="product-info">
+                        <h1 class="product-name">Samsung Galaxy S24 Ultra 5G AI Smartphone </h1>
+                        <p class="product-price">₹1,21,999</p>
+                        <p class="product-description">Titanium Gray, 12GB, 256GB Storage</p>
+                    </a>
+                        <button class="add-to-cart"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+                    </div>
+                </div>
+                <!-- Product 6 -->
+                <a href="product-details.html#18">
+                <div class="product-details" data-product-id="6" data-product-name="Samsung Galaxy S23 Ultra 5G AI Smartphone" data-product-price="72999">
+                    <img src="Product images/mobiles/s23 ultra.jpg" alt="Product Image" class="product-image">
+                    <div class="product-info">
+                        <h1 class="product-name">Samsung Galaxy S23 Ultra 5G AI Smartphone</h1>
+                        <p class="product-price">₹72,999</p>
+                        <p class="product-description">Green, 12GB, 256GB Storage</p>
+                    </a>
+                        <button class="add-to-cart"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+                    </div>
+                </div>
+                <!-- Product 7 -->
+                <a href="product-details.html#19">
+                <div class="product-details" data-product-id="7" data-product-name="Apple MacBook Pro Laptop 2024" data-product-price="309990">
+                    <img src="Product images/mobiles/MacBook pro.jpg" alt="Product Image" class="product-image">
+                    <div class="product-info">
+                        <h1 class="product-name">Apple MacBook Pro Laptop 2024</h1>
+                        <p class="product-price"> ₹3,09,990</p>
+                        <p class="product-description">MacBook Pro Laptop with M4 Max chip with 14‑core CPU and 32‑core GPU: Built for Apple Intelligence, (14.2″) Liquid Retina XDR Display, 36GB Unified Memory, 1TB SSD Storage; Space Black</p>
+                    </a>
+                        <button class="add-to-cart"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+                    </div>
+                </div>
+                <!-- Product 8 -->
+                <a href="product-details.html#20">
+                <div class="product-details" data-product-id="8" data-product-name="Apple 2024 MacBook Air 15" data-product-price="127990">
+                    <img src="Product images/mobiles/MacBook.jpg" alt="Product Image" class="product-image">
+                    <div class="product-info">
+                        <h1 class="product-name">Apple 2024 MacBook Air 15</h1>
+                        <p class="product-price">₹1,27,990</p>
+                        <p class="product-description">MacBook Air 15″ Laptop with M3 chip: 38.91 cm (15.3″) Liquid Retina Display, 16GB Unified Memory, 256GB SSD Storage, Backlit Keyboard, 1080p FaceTime HD Camera, Touch ID- Starlight</p>
+                    </a>
+                        <button class="add-to-cart"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+                    </div>
+                </div>
+                <!-- Product 9 -->
+                <a href="product-details.html#21">
+                <div class="product-details" data-product-id="9" data-product-name="HP Omen Gaming Laptop" data-product-price="284990">
+                    <img src="Product images/mobiles/Omen.jpg" alt="Product Image" class="product-image">
+                    <div class="product-info">
+                        <h1 class="product-name">HP Omen Gaming Laptop</h1>
+                        <p class="product-price">₹2,84,990</p>
+                        <p class="product-description">13Th Gen Intel Core I9-13900Hx,12Gb RTX 4080 Gpu,17.3-Inch (43.9 Cm),Qhd,IPS,240Hz,300 Nits,32Gb Ddr5,1Tb Ssd,RGB Backlit Kb,B&O (Mso,Black,2.76 Kg),Ck2004Tx-Windows 11 Home</p>
+                    </a>
+                        <button class="add-to-cart"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+                    </div>
+                </div>
+                <!-- Product 10 -->
+                <a href="product-details.html#22">
+                <div class="product-details" data-product-id="10" data-product-name="HP Pavilion Plus 13th Gen" data-product-price="122900">
+                    <img src="Product images/mobiles/Pavilion.jpg" alt="Product Image" class="product-image">
+                    <div class="product-info">
+                        <h1 class="product-name">HP Pavilion Plus 13th Gen</h1>
+                        <p class="product-price"> ₹1,22,900</p>
+                        <p class="product-description">13th Gen Intel EVO Ci7-13700H 16 GB LPDDR5 RAM, 1TB SSD, NVIDIA GeForce RTX 3050 6GB, WQXGA OLED 16"(40.6 cm),Backlit KB, (Win11,+MSO'21-N.Silver,1.9kg,),16-ab0456TX Gaming Laptop</p>
+                    </a>
+                        <button class="add-to-cart"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+                    </div>
+                </div>
+                <!-- Product 11 -->
+                <a href="product-details.html#23">
+                <div class="product-details" data-product-id="11" data-product-name="Samsung Galaxy Book3 Pro Intel 13th Gen" data-product-price="140990">
+                    <img src="Product images/mobiles/Samsung lap.jpg" alt="Product Image" class="product-image">
+                    <div class="product-info">
+                        <h1 class="product-name">Samsung Galaxy Book3 Pro Intel 13th Gen</h1>
+                        <p class="product-price"> ₹1,40,990</p>
+                        <p class="product-description">Intel 13th Gen i7 EvoTM 35.56cm(14") Dynamic Amoled 2X, 3K Display, 120Hz, Ultra Thin & Light Laptop(16 GB/1 TB SSD/Windows 11/MS Office/Graphite/1.17Kg), NP940XFG-KC5IN</p>
+                    </a>
+                        <button class="add-to-cart"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+                    </div>
+                </div>
+                <!-- Product 12 -->
+                <a href="product-details.html#24">
+                <div class="product-details" data-product-id="12" data-product-name="Samsung Galaxy Book3" data-product-price="74990">
+                    <img src="Product images/mobiles/Samsung Book.webp" alt="Product Image" class="product-image">
+                    <div class="product-info">
+                        <h1 class="product-name">Samsung Galaxy Book3 </h1>
+                        <p class="product-price"> ₹74,990</p>
+                        <p class="product-description">Core i7 13th Gen 1355U - (16 GB/512 GB SSD/Windows 11 Home) Galaxy Book3 Thin and Light Laptop (15.6 Inch, Graphite, 1.58 Kg, with MS Office)</p>
+                    </a>
+                        <button class="add-to-cart"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+                    </div>
+                </div>
+                <!-- Repeat for other products, ensuring each has data attributes for ID, name, and price -->
+            </div>
+        </section>
+        <section id="accessories" class="product-category">
+            <h2 class="category-name">Accessories</h2>
+            <div class="product-grid">
+                <link rel="effect" href="effect.html">
+                <!-- Product 1 -->
+                 <a href="product-details.html#25">
+                <div class="product-details" data-product-id="1" data-product-name="Sounce Earphone Case Case Cover" data-product-price="179">
+                    <img src="Product images/acessesories/aipods cover.jpg" alt="Product Image" class="product-image">
+                    <div class="product-info">
+                        <h1 class="product-name">Sounce Earphone Case Case Cover</h1>
+                        <p class="product-price">₹179</p>
+                        <p class="product-description">Compatible with AirPods Pro, Carabiner Included, Supports Wireless Charging, Shock Resistant, Full Protection [Front LED Visible] (Black)</p>
+                    </a>
+                        <button class="add-to-cart"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+                    </div>
+                </div>
+                <!-- Product 2 -->
+                <a href="product-details.html#26">
+                <div class="product-details" data-product-id="2" data-product-name="WOW IMAGINE Shockproof Crystal Clear Case" data-product-price="195">
+                    <img src="Product images/acessesories/shock proof case.jpg" alt="Product Image" class="product-image">
+                    <div class="product-info">
+                        <h1 class="product-name">WOW IMAGINE Shockproof Crystal Clear Case</h1>
+                        <p class="product-price">₹195</p>
+                        <p class="product-description">1+ OnePlus Nord CE 2 5G Back Cover Case | 360 Degree Protection | Transparent Mobile Back Cover Case for OnePlus Nord CE 2 5G (Hybrid PC + TPU | Black Bumper)</p>
+                    </a>
+                        <button class="add-to-cart"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+                    </div>
+                </div>
+                <!-- Product 3 -->
+                <a href="product-details.html#27">
+                <div class="product-details" data-product-id="3" data-product-name="Ambrane 20000mAh Powerbank" data-product-price="1398">
+                    <img src="Product images/acessesories/pwb.jpg" alt="Product Image" class="product-image">
+                    <div class="product-info">
+                        <h1 class="product-name">Ambrane 20000mAh Powerbank</h1>
+                        <p class="product-price"> ₹1,398</p>
+                        <p class="product-description">22.5W Fast Charging, Triple Output (2 USB & 1 Type C), Power Delivery, Quick Charge for iPhone, Android & Other Devices, Made in India + Type C Cable (Stylo 20, Black)</p>
+                    </a>
+                        <button class="add-to-cart"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+                    </div>
+                </div>
+                <!-- Product 4 -->
+                <a href="product-details.html#28">
+                <div class="product-details" data-product-id="4" data-product-name="Ambrane Braided Type C Cable" data-product-price="169">
+                    <img src="Product images/acessesories/usb.jpg" alt="Product Image" class="product-image">
+                    <div class="product-info">
+                        <h1 class="product-name">Ambrane Braided Type C Cable </h1>
+                        <p class="product-price"> ₹169</p>
+                        <p class="product-description">Unbreakable 3A Fast Charging 1.5m for Smartphones, Tablets & other Type C devices, 480Mbps Data Sync, Quick Charge 3.0 (RCT15A, Black)</p>
+                    </a>
+                        <button class="add-to-cart"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+                    </div>
+                </div>
+                <!-- Product 5 -->
+                <a href="product-details.html#29">
+                <div class="product-details" data-product-id="5" data-product-name="Ambrane 65W Charger Adapter" data-product-price="2299">
+                    <img src="Product images/acessesories/adaptor.jpg" alt="Product Image" class="product-image">
+                    <div class="product-info">
+                        <h1 class="product-name">Ambrane 65W Charger Adapter</h1>
+                        <p class="product-price">₹2,299</p>
+                        <p class="product-description">3 Ports - 2 Type C & 1 USB for Samsung, Type C Laptops: MacBook, Dell, HP, ASUS, Fast Charger with PD Technology & GaN Technology for All Devices (RAAP G65, Black)</p>
+                    </a>
+                        <button class="add-to-cart"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+                    </div>
+                </div>
+                <!-- Product 6 -->
+                <a href="product-details.html#30">
+                <div class="product-details" data-product-id="5" data-product-name="PTron Boom Ultima Gaming Wired Headphones" data-product-price="498">
+                    <img src="Product images/acessesories/hp.jpg" alt="Product Image" class="product-image">
+                    <div class="product-info">
+                        <h1 class="product-name">PTron Boom Ultima Gaming Wired Headphones</h1>
+                        <p class="product-price">₹498</p>
+                        <p class="product-description"> in-line Mic, Volume Control & Passive Noise Cancelling Boom 3 Earphones - (Dark Blue)</p>
+                    </a>
+                        <button class="add-to-cart"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+                    </div>
+                </div>
+                <!-- Product 7 -->
+                <a href="product-details.html#31">
+                <div class="product-details" data-product-id="6" data-product-name="DIGITEK Wireless Microphone System" data-product-price="₹2699">
+                    <img src="Product images/acessesories/mp.jpg" alt="Product Image" class="product-image">
+                    <div class="product-info">
+                        <h1 class="product-name">DIGITEK Wireless Microphone System</h1>
+                        <p class="product-price">₹2,699</p>
+                        <p class="product-description">ANC Mode, 50m Wireless Range, 6-Hour Working Time, Plug & Play Auto Pairing, Compatible with Android & iOS for Broadcasting & Audio Recording</p>
+                    </a>
+                        <button class="add-to-cart"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+                    </div>
+                </div>
+                <!-- Product 8 -->
+                <a href="products.html#32">
+                <div class="product-details" data-product-id="8" data-product-name="Rotating Mobile Holder" data-product-price="469">
+                    <img src="Product images/acessesories/CH.jpg" alt="Product Image" class="product-image">
+                    <div class="product-info">
+                        <h1 class="product-name">Rotating Mobile Holder</h1>
+                        <p class="product-price">₹469</p>
+                        <p class="product-description">Adjustable Bracket and 360° Swivel, for Any Tripod, Ring Light, Phone, Camera, and Video Camera, Ideal for Videographers and Photographers</p>
+                    </a>
+                        <button class="add-to-cart"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+                    </div>
+                </div>
+                <!-- Product 9 -->
+                <a href="product-details.html#33">
+                <div class="product-details" data-product-id="9" data-product-name="Coku Universal Tripod Mount Holder" data-product-price="498">
+                    <img src="Product images/acessesories/tri.jpg" alt="Product Image" class="product-image">
+                    <div class="product-info">
+                        <h1 class="product-name">Coku Universal Tripod Mount Holder </h1>
+                        <p class="product-price"> ₹498</p>
+                        <p class="product-description">Monopod Holder Clip for Mobile Camera Adjustable Smartphone Clip Clipper Compatible with All Smartphones (Black) (Tripod Head)</p>
+                    </a>
+                        <button class="add-to-cart"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+                    </div>
+                </div>
+                <!-- Product 10 -->
+                <a href="product-details.html#34">
+                <div class="product-details" data-product-id="10" data-product-name="KINGONE Long Selfie Stick" data-product-price="1698">
+                    <img src="Product images/acessesories/slieif.jpg" alt="Product Image" class="product-image">
+                    <div class="product-info">
+                        <h1 class="product-name">KINGONE Long Selfie Stick</h1>
+                        <p class="product-price">₹1,698</p>
+                        <p class="product-description">Tripod Stand Aluminum 71inch/180cm, 360° Degree Rotation Selfie Stick Tripod for Phone, Rechargeable Remote & LED Fill Light, 1/4" Screw for Camera Gopro for Vlogging</p>
+                    </a>
+                        <button class="add-to-cart"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+                    </div>
+                </div>
+                <!-- Product 11 -->
+                <a href="product-details.html#35">
+                <div class="product-details" data-product-id="11" data-product-name="Sounce Shutter Remote Control" data-product-price="469">
+                    <img src="Product images/acessesories/Rm.jpg" alt="Product Image" class="product-image">
+                    <div class="product-info">
+                        <h1 class="product-name">Sounce Shutter Remote Control</h1>
+                        <p class="product-price">₹469</p>
+                        <p class="product-description"> Bluetooth Wireless Technology - Create Amazing Photos and Videos Hands-Free - Works with Most Smartphones and Tablets (iOS and Android) (Black)</p>
+                    </a>
+                        <button class="add-to-cart"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+                    </div>
+                </div>
+                <!-- Product 12 -->
+                <a href="product-details.html#36">
+                <div class="product-details" data-product-id="12" data-product-name="DIGITEK 14 Inch Multi-Color LED Ring Light" data-product-price="1699">
+                    <img src="Product images/acessesories/light.jpg" alt="Product Image" class="product-image">
+                    <div class="product-info">
+                        <h1 class="product-name">DIGITEK 14 Inch Multi-Color LED Ring Light </h1>
+                        <p class="product-price">₹1,699</p>
+                        <p class="product-description">5ft Stand and Smartphone Mount, USB Support - Professional Lighting Solution for Photography, Video, YouTube and Content Creation</p>
+                    </a>
+                        <button class="add-to-cart"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+                    </div>
+                </div>
+                <!-- Repeat for other products, ensuring each has data attributes for ID, name, and price -->
+            </div>
+        </section>
+        <section id="home appliances" class="product-category">
+            <h2 class="category-name">Home Appliances</h2>
+            <div class="product-grid">
+                <!-- Product 1 -->
+                <a href="product-details.html#37">
+                <div class="product-details" data-product-id="1" data-product-name="Samsung Fully-Automatic Top Load Washing Machine Lavender Gray" data-product-price="17490">
+                    <img src="Product images/home appliances/washingmachine1.jpg" alt="Product Image" class="product-image">
+                    <div class="product-info">
+                        <h1 class="product-name">Samsung 7 Kg Washing Machine Lavender Gray</h1>
+                        <p class="product-price">₹17,490</p>
+                        <p class="product-description">7 Kilograms Dimensions 56.6D x 54W x 98.8H Centimeters
+                            Special Feature	Inverter, Water Level 5.00
+                            Cycle Options Delicates, Tub Clean, Quick Wash, Jeans, Normal
+                            Voltage	220 Volts
+                            Controls Type Touch
+                            Maximum Rotational Speed 700 RPM</p>
+                        </a>
+                        <button class="add-to-cart"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+                    </div>
+                </div>
+                <!-- Product 2 -->
+                <a href="product-details.html#38">
+                <div class="product-details" data-product-id="2" data-product-name="Whirlpool 7 Kg Washing Machine Grey" data-product-price="14490">
+                    <img src="Product images/home appliances/washingmachine2.webp" alt="Product Image" class="product-image">
+                    <div class="product-info">
+                        <h1 class="product-name">Whirlpool 7 Kg Washing Machine Grey</h1>
+                        <p class="product-price">₹14,490</p>
+                        <p class="product-description">Product Dimensions 58D x 55W x 85H Centimeters,
+                            Special Feature	Hard water wash,
+                            Cycle Options Hard Water Wash,
+                            Controls Type Fully Automatic,
+                            Maximum Rotational Speed 740 RPM,
+                            Access Location	Top Load</p>
+                        </a>
+                        <button class="add-to-cart"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+                    </div>
+                </div>
+                <!-- Product 3 -->
+                <a href="product-details.html#39">
+                <div class="product-details" data-product-id="3" data-product-name="LG 8 Kg Washing Machine Middle Free Silver" data-product-price="18990">
+                    <img src="Product images/home appliances/washingmachine3.webp" alt="Product Image" class="product-image">
+                    <div class="product-info">
+                        <h1 class="product-name">LG 8 Kg Washing Machine Middle Free Silver</h1>
+                        <p class="product-price">₹18,990</p>
+                        <p class="product-description">Product Dimensions 56D x 54W x 91H Centimeters
+                            Cycle Options Prewash, Tub Clean, Gentle, Quick Wash, Jeans, Wool, Normal, Rinse, Strong
+                            Controls Type Push Button
+                            Maximum Rotational Speed 700 RPM</p>
+                        </a>
+                        <button class="add-to-cart"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+                    </div>
+                </div>
+                <!-- Product 4 -->
+                <a href="product-details.html#40">
+                <div class="product-details" data-product-id="4" data-product-name="Samsung Double Door Refrigerator" data-product-price="112990">
+                    <img src="Product images/home appliances/fridge1.jpg" alt="Product Image" class="product-image">
+                    <div class="product-info">
+                        <h1 class="product-name">Samsung Double Door Refrigerator</h1>
+                        <p class="product-price">₹1,12,990</p>
+                        <p class="product-description">633 L, 3 Star, Frost Free, Double Door, Convertible 5-in-1 Digital Inverter, Side By Side Refrigerator with AI, WiFi & Water & Ice Dispenser (RS78CG8543S9HL, Silver, Refined Inox, 2024 Model)
+                        </a>
+                        </p>
+                        <button class="add-to-cart"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+                    </div>
+                </div>
+                <!-- Product 5 -->
+                <a href="product-details.html#41">
+                <div class="product-details" data-product-id="5" data-product-name="Haier Double Door Refrigerator" data-product-price="82990">
+                    <img src="Product images/home appliances/fridge2.jpg" alt="Product Image" class="product-image">
+                    <div class="product-info">
+                        <h1 class="product-name">Haier Double Door Refrigerator</h1>
+                        <p class="product-price">₹82,990</p>
+                        <p class="product-description">531 L Inverter Frost-Free Side-by-Side Refrigerator Product Dimensions 66D x 83W x 180H Centimeters (HRB-550KG, Black,Convertible)</p>
+                    </a>
+                        <button class="add-to-cart"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+                    </div>
+                </div>
+                <!-- Product 6 -->
+                <a href="product-details.html#42">
+                <div class="product-details" data-product-id="6" data-product-name="TOSHIBA Double Door Refrigerator" data-product-price="65990">
+                    <img src="Product images/home appliances/fridge3.webp" alt="Product Image" class="product-image">
+                    <div class="product-info">
+                        <h1 class="product-name">TOSHIBA Double Door Refrigerator</h1>
+                        <p class="product-price">₹65,990</p>
+                        <p class="product-description">587 L with Inverter Side by Side Refrigerator Product Dimensions	74.5D x 89.5W x 178.8H Centimeters(GR-RS530WE-PMI(06), Stainless Steel Finish)</p>
+                    </a>
+                        <button class="add-to-cart"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+                    </div>
+                </div>
+                <!-- Product 7 -->
+                <a href="product-details.html#43">
+                <div class="product-details" data-product-id="7" data-product-name="LG Microwave Oven" data-product-price="27000">
+                    <img src="Product images/home appliances/oven1.jpg" alt="Product Image" class="product-image">
+                    <div class="product-info">
+                        <h1 class="product-name">LG Microwave Oven</h1>
+                        <p class="product-price">₹27,000</p>
+                        <p class="product-description">32 L Charcoal Convection Microwave Oven Product Dimensions 20.5D x 20.9W x 12.7H Centimeters(MJEN326PK, Black, Charcoal Lighting Heater with 10 Yr. Warranty and 360° Motorised Rotisserie)</p>
+                    </a>
+                        <button class="add-to-cart"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+                    </div>
+                </div>
+                <!-- Product 8 -->
+                <a href="product-details.html#44">
+                <div class="product-details" data-product-id="8" data-product-name="Samsung Microwave Oven" data-product-price="16990">
+                    <img src="Product images/home appliances/oven2.webp" alt="Product Image" class="product-image">
+                    <div class="product-info">
+                        <h1 class="product-name">Samsung Microwave Oven</h1>
+                        <p class="product-price">₹16,990</p>
+                        <p class="product-description">32 L Slim Fry, Convection MWO with Tandoor&Curd making(MC32A7035CT/TL, Stainless Steel,Preheat, Keep Warm, Eco Mode,Power Defrost,Auto Cook, Wire Rack, 10Yr warranty on Ceramic Enamel Cavity)</p>
+                    </a>
+                        <button class="add-to-cart"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+                    </div>
+                </div>
+                <!-- Product 9 -->
+                <a href="product-details.html#45">
+                <div class="product-details" data-product-id="9" data-product-name="Panasonic Microwave Oven" data-product-price="16028">
+                    <img src="Product images/home appliances/oven3.jpg" alt="Product Image" class="product-image">
+                    <div class="product-info">
+                        <h1 class="product-name">Panasonic Microwave Oven</h1>
+                        <p class="product-price"> ₹16,028</p>
+                        <p class="product-description">27L Convection Microwave Oven Zero oil Vapour clean Twin turbo cooking(NN-CT64HBFDG, Black mirror + Golden , Zero Oil), Free 1 Year Extended warranty</p>
+                    </a>
+                        <button class="add-to-cart"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+                    </div>
+                </div>
+                <!-- Product 10 -->
+                <a href="product-details.html#46">
+                <div class="product-details" data-product-id="10" data-product-name="Butterfly Smart Mixer Grinder" data-product-price="2899">
+                    <img src="Product images/home appliances/mixer1.jpg" alt="Product Image" class="product-image">
+                    <div class="product-info">
+                        <h1 class="product-name">Butterfly Smart Mixer Grinder</h1>
+                        <p class="product-price">₹2,899</p>
+                        <p class="product-description">750 Watts Mixer Grinder with 4 Jars | 3 Stainless Steel Multipurpose Jars & 1 Juicer Jar | ABS Body | Heavy Duty Motor | 2 Years Manufacturer's Warranty | Grey</p>
+                    </a>
+                        <button class="add-to-cart"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+                    </div>
+                </div>
+                <!-- Product 11 -->
+                <a href="product-details.html#47">
+                <div class="product-details" data-product-id="11" data-product-name="Prestige Mixer Grinder" data-product-price="3099">
+                    <img src="Product images/home appliances/mixer2.jpg" alt="Product Image" class="product-image">
+                    <div class="product-info">
+                        <h1 class="product-name">Prestige Mixer Grinder</h1>
+                        <p class="product-price">₹3,099</p>
+                        <p class="product-description">750 Watts Iris Plus Mixer Grinder With 4 Jars (3 Stainless Steel Jars+ 1 Juicer Jar)| 4 Super Efficient Stainless Blades|Product Dimensions 2D x 50W x 29H Centimeters</p>
+                    </a>
+                        <button class="add-to-cart"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+                    </div>
+                </div>
+                <!-- Product 12 -->
+                <a href="product-details.html#48">
+                <div class="product-details" data-product-id="12" data-product-name="Preethi Blue Leaf Diamond MG-214 Mixer Grinder" data-product-price="3999">
+                    <img src="Product images/home appliances/mixer3.jpg" alt="Product Image" class="product-image">
+                    <div class="product-info">
+                        <h1 class="product-name">Preethi Blue Leaf Diamond MG-214 Mixer Grinder</h1>
+                        <p class="product-price">₹3,999</p>
+                        <p class="product-description">750 Watt Mixer Grinder with 3 Jars (Wet Grinding (1.5 litres) + Dry Grinding Jar (0.5 litre) + Chutney Jar (0.4 litre)Stainless steel), Blue/White, Special Feature	Safety Lock</p>
+                    </a>    
+                        <button class="add-to-cart"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+                    </div>
+                </div>
+                
+                <!-- Repeat for other products, ensuring each has data attributes for ID, name, and price -->
+            </div>
+        </section>
+        <footer>
+            <div id="footer" class="footer-content">
+                <p>&copy; 2024 Emporium</p>
+                <ul class="footer-social-links">
+                    <li><a href="https://www.linkedin.com/school/srieshwar/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+                    <li><a href="https://youtube.com/@srieshwar?si=obf4Jwyv7tWjYZsS" target="_blank"><i class="fab fa-youtube"></i> YouTube</a></li>
+                    <li><a href="#contact"  target="_blank"><i class="fas fa-phone-alt " ></i> Contact Us</a></li>
+                    <li><a href="https://www.instagram.com/srieshwar_cbe?igsh=eGI5MzE1NjE5YnR6" target="_blank"><i class="fab fa-instagram"></i> Instagram</a></li>
+                </ul>
+            </div>
+            </footer>
+
+
+</body>
+</html>

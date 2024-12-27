@@ -1,0 +1,401 @@
+/* General Styles */
+body, html {
+    
+    padding: 0;
+    background: linear-gradient(to bottom, #000000, #b49897); /* Gradient background */
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap; /* Ensure content wraps on smaller screens */
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #010000;
+    color: #fff;
+}
+
+.logo img {
+    height: 50px;
+}
+
+/* Navigation Styles */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    gap: 15px; /* Add gap between items */
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+nav ul li a:hover, nav ul li .dropdown:hover .dropdown-content {
+    color: #f0a500;
+}
+
+/* Dropdown Menu */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    left: 0; /* Move to the left */
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #333;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f0a500;
+    color: #fff;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Search Bar */
+.search-bar {
+    display: flex;
+    align-items: center;
+    margin-left: 20px; /* Add margin to separate from nav items */
+}
+
+.search-bar input {
+    padding: 5px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.search-bar i {
+    color: #333;
+}
+
+/* User Actions */
+.user-actions {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Add gap between items */
+    margin-right: 15px;
+}
+
+.user-actions a, .user-actions .dropdown {
+    margin-left: 20px;
+    color: #fff;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    position: relative;
+}
+
+/* User Actions Dropdown */
+.user-actions .dropdown-content {
+    display: none;
+    position: absolute;
+    left: 0; /* Move to the left */
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 8px;
+}
+
+.user-actions .dropdown-content a {
+    color: #333;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s ease;
+}
+
+.user-actions .dropdown-content a:hover {
+    background-color: #f0a500;
+    color: #fff;
+}
+
+.user-actions .dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center; /* Center align on small devices */
+    }
+
+    .logo {
+        margin-bottom: 10px; /* Add margin to separate from nav */
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    nav ul li {
+        margin: 5px 0; /* Adjust margin for vertical list */
+    }
+
+    .search-bar {
+        width: 100%;
+        margin-top: 10px;
+        justify-content: center; /* Center align search bar */
+    }
+
+    .user-actions {
+        flex-direction: column;
+        align-items: center; /* Center align on small devices */
+        width: 100%;
+        padding: 10px;
+        margin-top: 10px;
+    }
+
+    .user-actions a, .user-actions .dropdown {
+        margin: 10px 0; /* Adjust margin for vertical list */
+        justify-content: center; /* Center align icons */
+    }
+}
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product-images {
+    width: 100%;
+    max-width: 600px;
+    position: relative;
+}
+
+.carousel {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-inner img {
+    min-width: 100%;
+    max-width: 100%;
+    height: auto;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.carousel-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.carousel-control.prev {
+    left: 10px;
+}
+
+.carousel-control.next {
+    right: 10px;
+}
+
+.product-details {
+    width: 100%;
+    max-width: 600px;
+    padding: 20px 0;
+}
+
+.product-title {
+    font-size: 24px;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.product-description {
+    margin: 10px 0;
+    text-align: center;
+}
+
+.product-price {
+    font-size: 20px;
+    color: #333;
+    text-align: center;
+}
+
+.discount {
+    color: #e74c3c;
+    text-decoration: line-through;
+    margin-left: 10px;
+}
+
+.add-to-cart {
+    background-color: #000000;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+}
+
+.customer-reviews {
+    width: 100%;
+    max-width: 600px;
+    margin-top: 20px;
+}
+
+.review {
+    background-color: #f4f4f4;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.review-text {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+.review-rating {
+    color: #f39c12;
+}
+
+@media (min-width: 768px) {
+    .product {
+        flex-direction: row;
+    }
+
+    .product-images,
+    .product-details,
+    .customer-reviews {
+        width: 50%;
+    }
+
+    .product-details,
+    .customer-reviews {
+        padding-left: 20px;
+    }
+}
+
+
+/* Footer Styles */
+footer {
+    background: linear-gradient(to bottom, #000000, #4e1d1b); /* Gradient background */
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 50px;
+    position: relative; /* Ensure z-index works */
+    z-index: 10;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-content p {
+    font-size: 1.2rem; /* Slightly larger font size */
+    margin-bottom: 10px;
+    font-family: 'Arial', sans-serif;
+}
+
+.footer-social-links {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Space between footer links */
+}
+
+.footer-social-links li {
+    display: inline-block;
+}
+
+.footer-social-links a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease;
+    font-size: 1.2rem; /* Slightly larger icons */
+    font-family: 'Arial', sans-serif;
+}
+
+.footer-social-links a:hover {
+    color: #d4af37; /* Gold hover color */
+    transform: scale(1.1);
+}
+
+.footer-social-links i {
+    margin-right: 5px;
+}
+
+
+
+.footer-content::before {
+    left: 0;
+    transform: translateY(-100%); /* Position at the top */
+}
+
+.footer-content::after {
+    right: 0;
+    transform: translateY(100%); /* Position at the bottom */
+}
+
+/* General link styles */
+a {
+    color: #05351e;  /* Change this to your desired link color */
+    text-decoration: none;  /* Remove underline */
+}
+
+a:hover {
+    color: #ee5306;  /* Change this to your desired hover color */
+    text-decoration: none;  /* Ensure underline doesn't appear on hover */
+    cursor: pointer;
+}

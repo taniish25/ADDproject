@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart - ShopEasy</title>
+    <link rel="stylesheet" href="asserts/css/cart.css">
+    <script src="asserts/js/cart.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="Product images/logo3.png" alt="Your Logo" class="logo-image">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="home.html"><i class="fas fa-home"></i> Home</a></li>
+                <li class="dropdown">
+                    <a href="products.html" class="dropbtn"><i class="fas fa-store"></i> Shop</a>
+                    <div class="dropdown-content">
+                        <a href="products.html#clothing"><i class="fa-solid fa-shirt"></i> Clothing</a>
+                        <a href="products.html#phones"><i class="fa-solid fa-laptop"></i> Mobiles & Laptops</a>
+                        <a href="products.html#accessories"><i class="fa-solid fa-gamepad"></i> Accessories</a>
+                        <a href="products.html#home appliances"><i class="fa-solid fa-mug-saucer"></i> Home Appliances</a>
+                    </div>
+                </li>
+                <li><a href="#unavailable" title="Currently unavailable"><i class="fa-solid fa-globe"></i>Language</a></li>
+            </ul>
+        </nav>
+        <div class="search-bar">
+            <form action="#" method="get">
+                <input type="text" placeholder="Search.." name="search">
+                <button type="submit"><i class="fas fa-search"></i></button>
+            </form>
+        </div>
+        <div class="user-actions">
+            <a href="login.html"><i class="fas fa-user"></i> Login</a>
+            <a href="cart.html"><i class="fas fa-shopping-cart"></i> Cart</a>
+            <div class="dropdown">
+                <a href="#" class="dropdown-toggle"><i class="fa-solid fa-list"></i> More</a>
+                <div class="dropdown-content">
+                    <li><a href="home.html"><i class="fas fa-envelope"></i> Contact Us</a></li>
+                    <a href="home.html"><i class="fas fa-info-circle"></i> About</a>
+                    <a href="home.html"><i class="fa-solid fa-film"></i> Blog</a>
+                    <a href="portfolio.html"><i class="fas fa-briefcase"></i> Our Portfolio</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="cart-page">
+        <h1 class="cart-heading">Shopping Cart</h1>
+        <div class="cart-container">
+            <div id="cart-items">
+                <!-- Cart items will be dynamically added here -->
+            </div>
+            <div class="cart-summary">
+                <h2>Order Summary</h2>
+                <div class="summary-item">
+                    <span>Subtotal:</span>
+                    <span id="subtotal">₹0.00</span>
+                </div>
+                <div class="summary-item">
+                    <span>Shipping:</span>
+                    <span id="shipping">₹0.00</span>
+                </div>
+                <div class="summary-item total">
+                    <span>Total:</span>
+                    <span id="total">₹0.00</span>
+                </div>
+                <button class="checkout-btn">Proceed to Checkout</button>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <div id="footer" class="footer-content">
+            <p>&copy; 2024 Your Company</p>
+            <ul class="footer-social-links">
+                <li><a href="https://www.linkedin.com/school/srieshwar/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+                <li><a href="https://youtube.com/@srieshwar?si=obf4Jwyv7tWjYZsS" target="_blank"><i class="fab fa-youtube"></i> YouTube</a></li>
+                <li><a href="#contact"  target="_blank"><i class="fas fa-phone-alt " ></i> Contact Us</a></li>
+                <li><a href="https://www.instagram.com/srieshwar_cbe?igsh=eGI5MzE1NjE5YnR6" target="_blank"><i class="fab fa-instagram"></i> Instagram</a></li>
+            </ul>
+        </div>
+        </footer>
+</body>
+</html>

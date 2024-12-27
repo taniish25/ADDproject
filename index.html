@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce Website</title>
+    <link rel="stylesheet" href="asserts/css/home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+        <header>
+        <div class="logo">
+            <img src="Product images/logo3.png" alt="Your Logo" class="logo-image">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="home.html"><i class="fas fa-home"></i> Home</a></li>
+                <li class="dropdown">
+                    <a href="products.html" class="dropbtn"><i class="fas fa-store"></i> Shop</a>
+                    <div class="dropdown-content">
+                        <a href="products.html#clothing"><i class="fa-solid fa-shirt"></i> Clothing</a>
+                        <a href="products.html#home appliances"><i class="fa-solid fa-mug-saucer"></i> Home Appliances</a>
+                        <a href="products.html#phones"><i class="fa-solid fa-laptop"></i> Mobiles & Laptops</a>
+                        <a href="products.html#toys"><i class="fa-solid fa-gamepad"></i> Accessories</a>
+                    </div>
+                </li>
+                <li><a href="#unavailable" title="Currently unavailable"><i class="fa-solid fa-globe"></i>Language</a></li>
+            </ul>
+        </nav>
+        <div class="search-bar">
+            <form action="#" method="get">
+                <input type="text" placeholder="Search.." name="search">
+                <button type="submit"><i class="fas fa-search"></i></button>
+            </form>
+        </div>
+        <div class="user-actions">
+            <a href="cart.html"><i class="fas fa-shopping-cart"></i> Cart</a>
+            <div class="dropdown">
+                <a href="#" class="dropdown-toggle"><i class="fa-solid fa-list"></i>More</a>
+                <div class="dropdown-content">
+                    <li><a href="#contact"><i class="fas fa-envelope"></i> Contact Us</a></li>
+                    <a href="#about"><i class="fas fa-info-circle"></i> About</a>
+                    <a href="#blog"><i class="fa-solid fa-film"></i> Blog </a>
+                    <a href="portfolio.html"><i class="fas fa-briefcase"></i> Our Portfolio</a>
+                </div>
+            </li>
+        </div>
+    </header>
+    <main>
+        <!-- Homepage Section -->
+        <section id="home" class="hero">
+            <h1>Welcome to Our Store</h1>
+            <p>Discover the best products at unbeatable prices.</p>
+            <a href="#fp">
+             <button class="shop-now">Shop Now</button>
+            </a>
+        </section>
+        
+        <!-- Shop Category Section -->
+        <section id="shop" class="categories">
+            <h2>Shop by Category</h2>
+            <div class="category-list">
+                <div class="category electronics">
+                    <h3>Home Appliances</h3>
+                    <a href="products.html#home appliances">
+                        <button class="electronics-btn">Shop Now</button>
+                    </a>
+                </div>
+                <div class="category clothing">
+                    <h3>Clothing</h3>
+                    <a href="products.html#clothing">
+                        <button class="clothing-btn">Shop Now</button>
+                    </a>
+                </div>
+                <div class="category mobiles">
+                    <h3>Mobiles & Laptops</h3>
+                    <a href="products.html#phones">
+                        <button class="home-garden-btn">Shop Now</button>
+                    </a>
+                </div>
+                <div class="category accessories">
+                    <h3>electronic Acessories</h3>
+                    <a href="products.html#accessories">
+                        <button class="sports-btn">Shop Now</button>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Product Section -->
+        <section id="fp" class="fp-bg">
+            <h2 class="featured-title">Featured</h2>
+            <div class="fp-list">
+                <a href="products.html#todaydeals">
+                    <div class="featured-products">
+                        <img src="Product images/headphones.jpg" alt="Product Image" class="fproduct-image">
+                        <div class="fproduct-info">
+                            <h1 class="fproduct-name">Starting ₹149 | Headphones</h1>
+                            <p class="fproduct-price"></p>
+                            <p class="fproduct-description">
+                                Ends in 24hrs</p>
+                            <button class="buy-now"><i class="fa-solid fa-cart-shopping"></i> Buy Now</button>
+                        </div>
+                    </div>
+                </a>
+                <a href="products.html#todaydeals">
+                    <div class="featured-products">
+                        <img src="Product images/PC_379x304_1._SY304_CB572341311_.jpg" alt="Product Image" class="fproduct-image">
+                        <div class="fproduct-info">
+                            <h1 class="fproduct-name">Up to 60% off | Car, bike parts & accessories</h1>
+                            <p class="fproduct-price"></p>
+                            <p class="fproduct-description">Ends in 2 Days!</p>
+                            <button class="buy-now"><i class="fa-solid fa-cart-shopping"></i> Buy Now</button>
+                        </div>
+                    </div>
+                </a>
+                <a href="products.html#todaydeals">
+                    <div class="featured-products">
+                        <img src="Product images/clothing.jpg" alt="Clothing" class="fproduct-image">
+                        <div class="fproduct-info">
+                            <h1 class="fproduct-name">Up to 50% off | Clothing, Jewelry & Shoes</h1>
+                            <p class="fproduct-price"></p>
+                            <p class="fproduct-description">Ends in 5 Days!</p>
+                            <button class="buy-now"><i class="fa-solid fa-cart-shopping"></i> Buy Now</button>
+                        </div>
+                    </div>
+                </a>
+            </div>  
+        </section>
+        <section id="blog" class="blog">
+            <div class="container">
+                    <h2 class="blg">Our Blog</h2>
+                    <div class="blog-posts">
+                        <div class="blog-post">
+                            <img src="images/WhatsApp Image 2024-12-27 at 08.56.47_fe8315e8.jpg" alt="Blog Post 1">
+                            <h3>Discover, Learn, and Grow with Us</h3>
+                            <p>Hello there, fellow shoppers and enthusiasts! We are thrilled to welcome you to the official blog of Emporium. Whether you’re a loyal customer or a new visitor, we’re glad you’ve found your way here.</p>
+                            <a href="#">Read More</a>
+                        </div>
+                        <div class="blog-post">
+                            <img src="images/jeff.jpg" alt="Blog Post 2">
+                            <h3>Customer Success Stories</h3>
+                            <p>"How Our Products Transformed Vetri's Life" Content: Feature a detailed story of one of your customers and how your products made a difference in their lives. Include quotes, photos, and perhaps even a short interview.</p>
+                            <a href="#">Read More</a>
+                        </div>
+                        <div class="blog-post">
+                            <img src="images/uocoming.jpg" alt="Blog Post 3">
+                            <h3>Upcoming Events and Promotions</h3>
+                            <p>"Don't Miss Out: Upcoming Events and Exclusive Promotions" Content: Announce any upcoming events, sales, or promotions. Encourage your readers to stay tuned and provide details on how they can participate or take advantage of the deals.</p>
+                            <a href="#">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        <section id="about" class="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>Welcome to Emporium – where passion meets quality! 🌟<br> From 2019, Emporium has grown from a small idea into a thriving online marketplace. Our journey began with a simple goal: to bring you products that enhance your life, at prices that make you smile.
+                Thank you for choosing us!</p>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="images/about us.jpg" alt="About Us">
+                </div>
+                <div class="about-text">
+                    <h3>Our Mission</h3>
+                    <p>At Emporium, our mission is to deliver value, variety, and convenience to every shopper. We strive to be your go-to destination for all things . Whether you're looking for the latest gadgets, stylish fashion, or home essentials, we've got you covered.
+                    </p>
+                    <h3>Our Vision</h3>
+                    <p>Stay connected with us on social media and be the first to know about new arrivals, special offers, and exciting updates.
+                        </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>If you have any questions or need further information, please feel free to contact us. We are here to help!</p>
+            <form action="home.html#about">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+
+
+    </main>
+
+    <footer>
+    <div id="footer" class="footer-content">
+        <p>&copy; 2024 EMPORIUM</p>
+        <ul class="footer-social-links">
+            <li><a href="https://www.linkedin.com/school/srieshwar/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+            <li><a href="https://youtube.com/@srieshwar?si=obf4Jwyv7tWjYZsS" target="_blank"><i class="fab fa-youtube"></i> YouTube</a></li>
+            <li><a href="#contact"  target="_blank"><i class="fas fa-phone-alt " ></i> Contact Us</a></li>
+            <li><a href="https://www.instagram.com/srieshwar_cbe?igsh=eGI5MzE1NjE5YnR6" target="_blank"><i class="fab fa-instagram"></i> Instagram</a></li>
+        </ul>
+    </div>
+    </footer>
+    <script defer src="asserts/js/home.js"></script>
+</body>
+</html>
